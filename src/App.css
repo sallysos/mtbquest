@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  text-align: left;  /* Left-aligns all h1 elements globally */
+  margin-left: 20px; /* Optional: Adds some left margin for spacing */
+}
+
+.mtq-title {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 2em;
+}
+

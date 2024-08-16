@@ -1,0 +1,73 @@
+
+.frame-intro {
+    margin-bottom: 20px;
+    text-align: left;  
+    padding: 0 10%;
+}
+
+.frame-intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 95px; /* Add margin to align with other elements if needed */
+    text-align: left; 
+}
+
+.frame-intro p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333; /* Dark gray for readability */
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 730px; /* Limits the width of the text for better readability */
+}
+
+/* Frame groups and descriptions */
+.frame-group {
+    margin-bottom: 30px; /* Add space between each group */
+    text-align: left;
+    
+}
+
+.frame-group h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left; /* Ensure titles are left-aligned */
+    padding: 0 10%;
+}
+
+.frame-description {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    padding: 0 10%;
+    margin-bottom: 20px; /* Add space below the description */
+    max-width: 730px; /* Limits the width for consistency */
+}
+
+/* Buttons container grid layout */
+.frame-buttons-container {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
+    gap: 2vw;
+    justify-items: center;  /* Center buttons horizontally */
+}
+
+.frame-buttons-container button {
+    width: 40vw; /* Button width is 20% of the viewport width */
+    height: 7vh; /* Button height is 7% of the viewport height */
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #194146;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    min-width: 180px; /* Minimum width for consistency */
+    min-height: 60px;
+    margin: 5px auto; /* Center the buttons horizontally */
+    text-align: center; /* Center text within the button */
+}
+
+.frame-button:hover {
+    background-color: #0056b3;
+}

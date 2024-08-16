@@ -1,0 +1,55 @@
+/* src/components/ProgressBar.css */
+
+.progress-bar {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* Ensures even spacing between the steps */
+    width: 100%;
+    margin: 60px 0 60px 0;
+}
+
+.progress-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Ensures the line stretches the full width of the container */
+    height: 4px;
+    background-color: gray;
+    z-index: 0; /* Behind the circles */
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Relative positioning to center the label and circle */
+    flex: 1;
+}
+
+.progress-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: darkgray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.progress-circle.active {
+    background-color: #FF7F50;
+}
+
+.progress-label {
+    position: absolute;
+    top: 40px; /* Adjust this to position the label below the circle */
+    left: 50%; /* Center the label horizontally */
+    transform: translateX(-50%); /* Adjusts the label to be centered */
+    text-align: center;
+    font-size: 12px;
+    width: 100px; /* Optional: control label width */
+}
