@@ -42,9 +42,17 @@ h1 {
   margin-left: 20px; /* Optional: Adds some left margin for spacing */
 }
 
-.mtq-title {
+.mtb-title {
   text-align: left;
   margin-left: 20px;
   font-size: 2em;
+}
+
+.mtb-logo {
+  max-width: 150px; /* Adjust the max width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the logo horizontally */
+  padding: 20px 0; /* Add some padding to the top and bottom */
 }
 
