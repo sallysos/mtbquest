@@ -38,14 +38,13 @@
 }
 
 h1 {
-  text-align: left;  /* Left-aligns all h1 elements globally */
-  margin-left: 20px; /* Optional: Adds some left margin for spacing */
+  text-align: left;  /* Left-aligns all h1 elements globally */ /* Optional: Adds some left margin for spacing */
 }
 
 .mtb-title {
   text-align: left;
-  margin-left: 20px;
   font-size: 2em;
+  padding: 0 10%;
 }
 
 .mtb-logo {

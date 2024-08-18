@@ -2,7 +2,6 @@
 .frame-intro {
     margin-bottom: 20px;
     text-align: left;  
-    padding: 0 10%;
 }
 
 .frame-intro h2 {
@@ -16,9 +15,9 @@
     font-size: 1em;
     line-height: 1.5;
     color: #333; /* Dark gray for readability */
-    margin: 0 auto;
+    padding: 0 10%;
     margin-bottom: 50px;
-    max-width: 730px; /* Limits the width of the text for better readability */
+    
 }
 
 /* Frame groups and descriptions */
@@ -40,8 +39,9 @@
     line-height: 1.5;
     color: #333;
     padding: 0 10%;
+    text-align: left;
     margin-bottom: 20px; /* Add space below the description */
-    max-width: 730px; /* Limits the width for consistency */
+    
 }
 
 /* Buttons container grid layout */
@@ -54,8 +54,12 @@
 }
 
 .frame-buttons-container button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
     width: 40vw; /* Button width is 20% of the viewport width */
-    height: 7vh; /* Button height is 7% of the viewport height */
+    height: 8vh; /* Button height is 7% of the viewport height */
     font-size: 18px;
     cursor: pointer;
     background-color: #194146;
@@ -63,11 +67,22 @@
     border: none;
     border-radius: 5px;
     min-width: 180px; /* Minimum width for consistency */
-    min-height: 60px;
+    min-height: 180px;
     margin: 5px auto; /* Center the buttons horizontally */
     text-align: center; /* Center text within the button */
 }
 
+.frame-buttons-container button img {
+    width: 80%;
+    height: 80%; /* Maintain image aspect ratio */
+    object-fit: contain; /* Ensure image is not distorted */
+}
+
+.frame-buttons-container button span {
+    flex-grow: 1;
+}
+
+
 .frame-button:hover {
-    background-color: #0056b3;
+    background-color: #FF6314;
 }

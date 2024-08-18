@@ -69,7 +69,7 @@ function App() {
     <div className="App">
       <header>
         <img src="/images/MTB-logo.png" alt="MTB Logo" className="mtb-logo" />
-        <h1 className="mtq-title">Bike Customization Simulator</h1>
+        <h1 className="mtb-title">Bike Customization Simulator</h1>
       </header>
       <ProgressBar currentStep={currentStep} />
       
