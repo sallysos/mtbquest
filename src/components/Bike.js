@@ -1,13 +1,38 @@
-// src/components/Bike.js
 import React from 'react';
 
-function Bike({ frameType, frameColor, gearColors }) {
+function Bike({ frameType, selectedFrameProduct, wheelsType, wheelsColor }) {
+  if (!selectedFrameProduct) {
+    return (
+      <div style={{ 
+        width: '300px', 
+        height: '300px', 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center', 
+        border: '1px dashed #ccc', 
+        marginBottom: '1rem' 
+      }}>
+        <p style={{ padding: '1rem', textAlign: 'center' }}>
+          Please select a frame to start customizing your bike.
+        </p>
+      </div>
+    );
+    }
+
+
   return (
     <div>
-      <img src={`images/${frameType}-${frameColor}.png`} alt="Bike Frame" />
-      {Object.entries(gearColors).map(([gear, color]) => (
-        <img key={gear} src={`images/${gear}-${color}.png`} alt={gear} />
-      ))}
+      <h3>Bike Preview</h3>
+      <img
+        src={selectedFrameProduct.image}
+        alt={selectedFrameProduct.name}
+        style={{ maxWidth: '300px', marginBottom: '1rem' }}
+      />
+      {wheelsType && (
+        <p>
+          Wheels: {wheelsType} ({wheelsColor})
+        </p>
+      )}
     </div>
   );
 }

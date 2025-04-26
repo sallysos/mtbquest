@@ -33,9 +33,10 @@ function FrameSelector({ onSelectFrame }) {
           <br />
           Start building your dream bike by selecting your preferred frame type and configuration. 
         </p>
+        <h2>Select Frame Type</h2>
       </section>
 
-      <h2>Select Frame Type</h2>
+      
       <div className="frame-groups-container">
           {frameGroups.map((group) => (
             <div key={group.title} className="frame-group">

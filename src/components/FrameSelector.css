@@ -2,13 +2,15 @@
 .frame-intro {
     margin-bottom: 20px;
     text-align: left;  
+    
 }
 
 .frame-intro h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
-    margin-left: 95px; /* Add margin to align with other elements if needed */
     text-align: left; 
+    padding: 0 10%;
+    color: #333;
 }
 
 .frame-intro p {

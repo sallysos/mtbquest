@@ -1,0 +1,30 @@
+/* src/components/ColorPicker.css */
+
+/* Container for the color picker */
+.color-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between each color option */
+    align-items: center; /* Center align color options */
+  }
+  
+  /* Each color option button */
+  .color-option {
+    width: 40px; /* Width of the color button */
+    height: 40px; /* Height of the color button */
+    border-radius: 50%; /* Make the button round */
+    border: 2px solid #ccc; /* Light gray border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  /* Highlight color button on hover */
+  .color-option:hover {
+    border-color: #000; /* Change border color to black on hover */
+  }
+  
+  /* For 'Multicolored' option (optional customization) */
+  .color-option.multi {
+    background: linear-gradient(45deg, red, yellow, green, blue, purple);
+  }
+  
